@@ -1,0 +1,488 @@
+/* Start Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+@import url('reset.css');
+
+
+
+/* Begin Custom Styles */
+
+body{
+    font-family: "Jura", sans-serif;
+}
+
+/* Navbar */
+
+#navbar {
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0.2rem;
+    box-shadow: 0px 4px 4px #535353;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: white;
+    background-color:#4F4F4F;
+    background-image: linear-gradient(#535353, #868686);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border-radius: 50%;
+    animation: vertical-shaking 18s infinite;
+    transition: 0.5%;
+    display: block;
+    position: relative;
+    height: 3.25em;
+    width: 95%;
+    overflow: hidden;
+    margin: 1em;
+    border-radius: 100px;
+    transition: all .63s;
+    background-color: 535353;
+    background-image: linear-gradient(#535353, #868686);
+}
+
+#menu_logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 4%;
+    height: 100%;
+    border-radius: 100px;
+    background: #535353;
+    color: #FFF;
+    text-align: center;
+    font-size: 2.6em;
+    cursor: hand;
+    cursor: pointer;
+    transition: all .65s .5s;
+}
+
+nav {
+    display: block;
+    height: 100%;
+    width: 75%;
+    overflow: hidden;
+    float: right;
+    transition: all .65s;
+    border-radius: 100px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 85%;
+    height: 85%;
+    position: relative;
+    list-style: none;
+    left: 45%;
+    top: 8%;
+}
+
+li {
+    position: relative;
+    width: 15%;
+    height: 100%;
+    float: left;
+    border-radius: 100px;
+    text-align: center;
+    background-color: #4F4F4F;
+    box-shadow: 0px 0px 40px #606060;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: white;
+    background-image: linear-gradient(#535353, #868686);
+    box-shadow: 0px 0px 80px -2px #454444 inset;
+    border-right: 1px solid #333;
+    transition: all .2s;
+    margin: 0% .5%;
+}
+
+li:active {
+    box-shadow: 0px 0px 8px 0px #333333 inset;
+    transition: all .5s;
+}
+
+li:last-child {
+    border: none;
+}
+
+li:hover {
+    background-color: #eee;
+    transition: all .2s;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #fff !important;
+    padding: .8em;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3em;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    transition: all .3s;
+}
+
+li:hover a::before {
+    top: 0;
+    transition: all .35s;
+}
+
+li:active a::before {
+    top: 3em;
+    transition: all .15s;
+}
+
+#navbar.clickHide {
+    width: 14%;
+    transition: all .5s .65s;
+}
+
+#navbar img {
+    width: 50px;
+    height: auto;
+    position: relative;
+    top: 6px;
+}
+
+.clickHide #menu_logo {
+    width: 100%;
+    transition: all .5s;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+/* Home Page */
+
+.cont {
+    /* add this */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+#homepage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+}
+
+#homepage h1{
+        font-family: 'Jura', sans-serif;
+        font-weight: 500;
+        text-align: center;
+        color: #414141;
+        font-size: 200px;
+        animation: vertical-shaking 8.5s infinite;
+}
+
+#homepage p{
+        font-family: 'Jura', sans-serif;
+        color: #535353;
+        font-size: 64px;
+        text-align: center;
+}
+
+/* About Page */
+
+#aboutpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+}
+
+/* Work Page */
+
+#workpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+}
+
+/* Contact Page */
+
+#contactpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+}
+
+.contact_info{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 2%;
+    border-radius: 15px;
+    background-color: #4F4F4F;
+    background-image: linear-gradient(#535353, #868686);
+}
+
+.contact_details{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 2%;
+    color: #fff;
+}
+
+.contact_details h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.contact_details p{
+    font-size: 18px;
+}
+
+.contactform {
+	scale: 100%;
+	width: 28%;
+	height: 300px;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  margin: 0 auto;
+	  padding: 1rem;
+	  box-shadow: 0px 4px 4px #535353;
+	  filter: blur(0.55px);
+	  outline-width: 1px;
+	  outline-style: solid;
+	  outline-color: white;
+	  border-radius: 2em;
+	  background-color: #4F4F4F;
+	  background-image: linear-gradient(#535353, #868686);
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  label{
+    color: #fff;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px #535353;
+    filter: blur(0.55px);
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: white;
+    border-radius: 2em;
+    background-color: #4F4F4F;
+    background-image: linear-gradient(#535353, #868686);
+  }
+
+/* Media Queries */
+
+/* Extra large devices (large laptops and desktops, 1024px and up) */
+@media only screen and (max-width: 1024px) {
+
+
+    #homepage h1 {
+        font-family: 'Jura', sans-serif;
+        font-weight: 500;
+        text-align: center;
+        color: #414141;
+        font-size: 160px;
+        animation: vertical-shaking 8.5s infinite;
+    }
+
+    #homepage p {
+        font-family: 'Jura', sans-serif;
+        color: #535353;
+        font-size: 44px;
+        text-align: center;
+    }
+
+
+    .contact_info {
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 2%;
+        border-radius: 15px;
+        background-color: #4F4F4F;
+        background-image: linear-gradient(#535353, #868686);
+    }
+
+}
+
+/* Large devices (laptops/desktops, 744px and up) */
+@media only screen and (max-width: 744px) {
+ 
+    nav {
+        display: block;
+        height: 100%;
+        width: 75%;
+        overflow: hidden;
+        float: right;
+        transition: all .65s;
+        border-radius: 100px;
+        right: 10px;
+        position: relative;
+    }
+
+    .ca-more {
+        position: relative;
+        bottom: 0px;
+        right: 8px;
+        padding: 4px 4px;
+        border-radius: 100px;
+        font-weight: bold;
+        text-align: center;
+        color: #000 !important;
+        font-family: "Jura", sans-serif;
+        font-size: 20px;
+    }
+
+}
+
+/* Extra small devices (phones, 430px and down) */
+@media only screen and (max-width: 430px) {
+
+    body{
+        width: 100vw;
+    }
+
+    #homepage h1 {
+        font-family: 'Jura', sans-serif;
+        font-weight: 500;
+        text-align: center;
+        color: #414141;
+        font-size: 130px;
+        animation: vertical-shaking 8.5s infinite;
+    }
+
+    .about_content p {
+        color: #fff;
+        font-size: 20px;
+        width: 300px;
+    }
+
+    #navbar img {
+        width: 50px;
+        height: auto;
+        position: relative;
+        top: 5px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 375px and up) */
+@media only screen and (min-width: 375px) {
+    #homepage h1 {
+        font-family: Jura, sans-serif;
+        font-weight: 500;
+        text-align: center;
+        color: #414141;
+        font-size: 90px;
+        animation: vertical-shaking 8.5s infinite;
+    }
+
+    #homepage p {
+        font-family: 'Jura', sans-serif;
+        color: #535353;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        width: 75%;
+        height: 75%;
+        position: relative;
+        list-style: none;
+        left: 35%;
+        top: 16%;
+    }
+
+    li {
+        position: relative;
+        width: 20%;
+        height: 82%;
+        float: left;
+        border-radius: 50px;
+        text-align: center;
+        background-color: #4F4F4F;
+        box-shadow: 0px 0px 40px #606060;
+        outline-width: 1px;
+        outline-style: solid;
+        outline-color: white;
+        background-image: linear-gradient(#535353, #868686);
+        box-shadow: 0px 0px 80px -2px #454444 inset;
+        border-right: 1px solid #333;
+        transition: all .2s;
+        margin: 0% .3%;
+    }
+
+
+}
+
+
+
+
+
