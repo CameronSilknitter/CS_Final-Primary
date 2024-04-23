@@ -85,12 +85,12 @@
 
 /* Home Page */
 .ca-icon{
-	width:260px;
+	width:270px;
 	height:200px;
-	border-radius: 30px;
+	border-radius: 20px;
 	position:relative;
 	margin:0 auto;
-	background:transparent url(../img/animal1.png) no-repeat center center;
+	background:transparent url(../img/Explore.GIF) no-repeat center center;
 }
 .ca-item-2 .ca-icon{
 	background-image:url(../img/PhotographyPreivew.jpg);
@@ -130,13 +130,13 @@
 
 /* About Page */
 .ca-item-13 .ca-icon{
-	background-image:url(../img/animal8.png);
+	background-image:url(../img/portfolioimg/Hellopan.png);
 }
 .ca-item-14 .ca-icon{
-	background-image:url(../img/animal8.png);
+	background-image:url(../img/portfolioimg/Personal\ History.png);
 }
 .ca-item-15 .ca-icon{
-	background-image:url(../img/animal8.png);
+	background-image:url(../img/portfolioimg/Creative\ Process.png);
 }
 
 .ca-item h3{
@@ -482,7 +482,7 @@
         color: #fff !important;
         padding: .2rem;
         position: relative;
-        top: 5px;
+        top: -1px;
     }
 
 	.about_content p {
